@@ -2,6 +2,8 @@ import express from "express";
 
 const app = express();
 
-app.listen(5001, () => console.log('API running on port 5001'));
+const port = 5000;
+
+app.listen(port, () => console.log(`API running on port ${port}`));
 
 app.get('/', (req, res) => res.json('My API running!'));
